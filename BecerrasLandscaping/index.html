@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -29,6 +29,7 @@
       <a href="#why">Why Us</a>
       <a href="#work">Recent Work</a>
       <a href="#reviews">Reviews</a>
+      <a href="#blog" id="blogLink" aria-haspopup="dialog">Blog</a>
       <a href="#quote">Contact</a>
     </nav>
     <div class="header-ctas">
@@ -361,6 +362,42 @@
   </div>
 </footer>
 
+<dialog class="demo-modal blog-modal" id="blogModal" aria-labelledby="blogModalTitle">
+  <button class="modal-x" id="blogClose" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+  </button>
+  <p class="eyebrow">Blog</p>
+  <h2 id="blogModalTitle" class="sr-only">Blog</h2>
+  <article class="post">
+    <span class="badge">Sample post</span>
+    <h3 class="post-title">5 Drought-Smart Landscaping Ideas for Bakersfield Homes</h3>
+    <p class="post-meta">Sample post for illustration. Not written by Becerra's Landscaping.</p>
+    <p>Summers in Bakersfield are hot and dry, and water bills show it. The good news is that a yard in Kern County can look sharp all year without soaking up water. Here are five ideas we see work well for homes around town.</p>
+    <h4>1. Artificial turf where the lawn used to struggle</h4>
+    <p>Side yards and front strips are the first places grass gives up in July. Artificial turf stays green with no mowing, watering, or fertilizing, so it's a simple swap for the hardest spots.</p>
+    <h4>2. Plants that like the heat</h4>
+    <p>Agave, yucca, lavender, and other drought-tolerant plants handle Bakersfield sun and need far less water once they settle in. Group them by how much water they need so nothing gets drowned or dried out.</p>
+    <h4>3. Drip irrigation instead of spray</h4>
+    <p>Drip lines put water at the roots, not in the air. Pair them with a timer set to early morning and you cut down on runoff and evaporation. If your old sprinklers are watering the sidewalk, it's time for a tune-up.</p>
+    <h4>4. Mulch and decorative rock</h4>
+    <p>A layer of mulch or decomposed granite keeps soil cooler, holds moisture, and keeps weeds down. It also gives beds a clean, finished look.</p>
+    <h4>5. Pavers and stamped concrete</h4>
+    <p>A patio, walkway, or paver strip means less lawn to water and more usable space. Good hardscape holds up to Kern County heat and looks good for years.</p>
+    <p>Not sure where to start? A quick walk around your yard is usually enough to spot the easy wins. Call for a free estimate anywhere in Kern County.</p>
+  </article>
+  <aside class="gets" aria-labelledby="getsTitle">
+    <p class="eyebrow">What you get</p>
+    <h3 id="getsTitle">One new blog post every month. Included.</h3>
+    <ul class="ticks">
+      <li>Fresh content Google rewards: every post is another page that can rank for local searches.</li>
+      <li>Answers the questions customers are already typing into Google, like "how much does artificial turf cost in Bakersfield".</li>
+      <li>Written for their trade and their town, published to their site, they lift zero fingers.</li>
+    </ul>
+    <p class="gets-line">Every Tradecall Pro website includes at least one blog post per month.</p>
+    <a class="btn btn-call btn-lg" href="https://tradecallpro.co/#trial" target="_blank" rel="noopener">Get Started<span class="sr-only"> (opens the Tradecall Pro free trial in a new tab)</span></a>
+  </aside>
+</dialog>
+
 <dialog class="demo-modal" id="demoModal" aria-labelledby="demoTitle">
   <button class="modal-x" id="demoClose" type="button" aria-label="Close">
     <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
@@ -387,7 +424,7 @@
   <a class="btn btn-ghost" href="#quote">Free quote</a>
 </div>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=4"></script>
 <script src="demo.js?v=1"></script>
 </body>
 </html>
