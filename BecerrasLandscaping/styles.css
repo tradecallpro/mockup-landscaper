@@ -313,3 +313,8 @@ html{scroll-padding-top:90px}
 .header-row{height:84px}.brand img{height:72px;width:72px}html{scroll-padding-top:96px}
 @media (max-width:640px){.header-row{height:70px}.brand img{height:58px;width:58px}}
 @media (max-width:380px){.brand img{height:48px;width:48px}}
+/* header logo: standing size, 160px wide desktop / 110px wide mobile, aspect ratio kept */
+.header-row{height:auto;min-height:84px;padding-top:6px;padding-bottom:6px}
+.site-header .brand img{width:160px;height:auto;aspect-ratio:1/1;object-fit:contain}
+html{scroll-padding-top:184px}
+@media (max-width:640px){.header-row{min-height:70px}.site-header .brand img{width:110px}html{scroll-padding-top:130px}}
