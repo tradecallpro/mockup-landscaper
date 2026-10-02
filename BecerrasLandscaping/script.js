@@ -1,4 +1,20 @@
 (function () {
+  // Header nav: hamburger below the desktop breakpoint
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('nav');
+  var header = document.querySelector('.site-header');
+  function setMenu(open) {
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
+  nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  document.addEventListener('click', function (e) { if (!header.contains(e.target)) setMenu(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth >= 1180) setMenu(false); });
+})();
+(function () {
   // "Quote this job" links preselect the service in the form
   var select = document.getElementById('service');
   document.querySelectorAll('[data-service]').forEach(function (a) {

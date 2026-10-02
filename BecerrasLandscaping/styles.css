@@ -318,3 +318,41 @@ html{scroll-padding-top:90px}
 .site-header .brand img{width:160px;height:auto;aspect-ratio:1/1;object-fit:contain}
 html{scroll-padding-top:184px}
 @media (max-width:640px){.header-row{min-height:70px}.site-header .brand img{width:110px}html{scroll-padding-top:130px}}
+
+/* header nav */
+.nav{display:none}
+.nav a{color:var(--on-light,#173322);text-decoration:none;font-weight:600;font-size:.95rem}
+.nav a:hover{color:var(--green)}
+.menu-btn{background:none;border:0;width:44px;height:44px;display:flex;flex-direction:column;justify-content:center;gap:5px;align-items:center;cursor:pointer;flex:none}
+.menu-btn span{display:block;width:24px;height:3px;background:#173322;border-radius:2px;transition:transform .2s,opacity .2s}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.header-ctas{margin-left:auto}
+.site-header .nav.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #d9e2d6;box-shadow:0 14px 24px rgba(0,0,0,.25);padding:6px 18px 14px}
+.site-header .nav.open a{padding:15px 4px;border-bottom:1px solid #e3eae0;font-size:1.05rem}
+.site-header .nav.open a:last-child{border-bottom:0}
+@media (min-width:1180px){
+  .menu-btn{display:none}
+  .nav{display:flex;gap:24px;margin-left:28px}
+  .header-ctas{margin-left:auto}
+}
+@media (max-width:640px){
+  .header-row{gap:4px}
+  .header-row.wrap{padding:0 10px}
+  .header-ctas{gap:4px}
+  .header-ctas .btn{padding:0 9px}
+  .header-call{width:44px;padding:0!important}
+  .header-call::after{content:none!important}
+  .header-call span{display:none}
+  .header-ctas .btn-demo span{font-size:.8rem}
+}
+.site-header .nav.open a{color:#173322}
+.site-header .nav.open a:hover{color:var(--green)}
+.site-header .brand{flex:none}
+@media (max-width:640px){
+  .header-row.wrap{padding:0 8px}
+  .header-ctas .btn-demo{padding:0 7px}
+  .header-call{width:40px}
+  .menu-btn{width:40px}
+}
