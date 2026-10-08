@@ -371,3 +371,11 @@ html{scroll-padding-top:184px}
 .gets .ticks{margin-bottom:16px}
 .gets-line{margin:0 0 16px;font-weight:700}
 @media (max-width:640px){.blog-modal{padding:24px 16px 20px}}
+
+/* ADA Ready badge + modal */
+.ada-btn{margin-top:14px;display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;background:transparent;color:var(--text);border:1px solid var(--muted);border-radius:999px;font:600 .9rem/1 var(--body);letter-spacing:.02em;cursor:pointer}
+.ada-btn:hover{border-color:var(--amber);color:var(--amber)}
+.ada-modal{width:min(94vw,560px)}
+.ada-modal h2{padding-right:48px}
+.ada-modal p{margin:0 0 14px;line-height:1.55}
+.ada-close-line{font-weight:700}
