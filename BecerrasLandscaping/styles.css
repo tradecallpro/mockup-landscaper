@@ -379,3 +379,18 @@ html{scroll-padding-top:184px}
 .ada-modal h2{padding-right:48px}
 .ada-modal p{margin:0 0 14px;line-height:1.55}
 .ada-close-line{font-weight:700}
+
+/* Accessibility: caption scrim for 4.5:1 over photos, 44px touch targets */
+.cap{background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.78) 35%,rgba(0,0,0,.9))}
+.card-link{display:inline-flex;align-items:center;min-height:44px;margin-top:4px}
+.site-footer address a{display:inline-block;padding:12px 0}
+.brand{min-height:44px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+.legal a{display:inline-flex;align-items:center;min-height:44px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.menu-btn{flex:none;min-width:44px}
+.header-call{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+.btn-demo{min-height:44px}
+.skip{min-height:44px;display:inline-flex;align-items:center}
+.site-header .brand{min-height:45px}
+@media (max-width:640px){.site-header .brand{min-height:66px}}
